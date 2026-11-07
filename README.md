@@ -1,0 +1,2 @@
+# Nostr_stamprally_app
+Nostr上で動くスタンプラリーアプリ
