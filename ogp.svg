@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1200" height="630" fill="url(#bg)" />
+
+  <!-- 幾何学グリッド線 -->
+  <g stroke="#334155" stroke-width="1.5" opacity="0.5">
+    <path d="M0 105 H1200 M0 210 H1200 M0 315 H1200 M0 420 H1200 M0 525 H1200" />
+    <path d="M150 0 V630 M300 0 V630 M450 0 V630 M600 0 V630 M750 0 V630 M900 0 V630 M1050 0 V630" />
+  </g>
+
+  <!-- 装飾用ジオメトリックサークル -->
+  <circle cx="240" cy="400" r="90" fill="none" stroke="#06b6d4" stroke-width="2" opacity="0.25" />
+  <circle cx="960" cy="190" r="130" fill="none" stroke="#ec4899" stroke-width="2" opacity="0.25" />
+
+  <!-- ルート線 -->
+  <polyline points="240,400 480,220 720,350 960,190" fill="none" stroke="url(#line)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="20 16" />
+
+  <!-- 各チェックインスポットのノード -->
+  <circle cx="240" cy="400" r="18" fill="#06b6d4" stroke="#ffffff" stroke-width="4" />
+  <circle cx="480" cy="220" r="18" fill="#6366f1" stroke="#ffffff" stroke-width="4" />
+  <circle cx="720" cy="350" r="18" fill="#a855f7" stroke="#ffffff" stroke-width="4" />
+
+  <!-- ゴール地点のピン -->
+  <g transform="translate(960, 190)">
+    <circle cx="0" cy="0" r="34" fill="#ec4899" opacity="0.3" />
+    <path d="M0,-58 C-22,-58 -38,-42 -38,-20 C-38,8 0,48 0,48 C0,48 38,8 38,-20 C38,-42 22,-58 0,-58 Z" fill="#ec4899" stroke="#ffffff" stroke-width="4" />
+    <circle cx="0" cy="-22" r="12" fill="#ffffff" />
+  </g>
+
+  <!-- タイトルテキスト -->
+  <text x="600" y="535" font-family="sans-serif" font-size="52" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="2">📍 Nostr StampRally</text>
+  <text x="600" y="580" font-family="sans-serif" font-size="22" fill="#94a3b8" text-anchor="middle" letter-spacing="4">DECENTRALIZED LOCATION STAMP RALLY</text>
+</svg>
